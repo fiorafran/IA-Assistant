@@ -8,6 +8,9 @@ const model = process.env.MODEL_ID;
 app.use(Express.urlencoded({ extended: false }));
 app.use(Express.json());
 
+app.get("/", (req, res) => {
+  res.send("Conectado");
+})
 app.post("/", async (req, res) => {
   const incomingMsg = req.body.content;
 
