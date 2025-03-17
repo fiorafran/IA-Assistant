@@ -4,17 +4,22 @@
   "description": "IA assistant for WhatsApp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --env-file .env --watch index.js"
   },
   "repository": {
     "type": "git",
     "url": "IA-Assistant"
   },
+  "type": "module",
   "keywords": [
     "IA",
     "assistant",
     "whatsapp"
   ],
   "author": "fiorafran",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/inference": "^3.3.2",
+    "express": "^4.19.2"
+  }
 }

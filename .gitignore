@@ -1,0 +1,6 @@
+.qodo
+.env
+*.png
+node_modules
+test.js
+indexog.js
